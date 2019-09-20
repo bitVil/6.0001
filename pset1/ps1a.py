@@ -3,6 +3,9 @@
 Created on Thu Feb 15 15:42:34 2018
 
 @author: David
+
+Input: positive values for total_cost, portion_saved and annual_salary. 
+Output: A positive integer, the number of months needed to save for down payment.
 """
 # Get user input.
 annual_salary = float(input('Enter your annual salary?: '))
