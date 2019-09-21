@@ -438,6 +438,7 @@ def play_game(word_list):
                 new_hand = substitute_hand(hand, sub_letter)
                 hand_score = play_hand(new_hand, word_list)
             else:
+                print()
                 hand_score = play_hand(hand, word_list)
 
             hand_score_list.append(hand_score)
@@ -479,16 +480,7 @@ def play_game(word_list):
 # Do not remove the "if __name__ == '__main__':" line - this code is executed
 # when the program is run directly, instead of through an import statement
 #
-#if __name__ == '__main__':
-word_list = load_words()
-play_game(word_list)
-#print(get_word_score('weed', 6))
-#hand = {'a':1, 'x':2, 'l':3, 'e':1}
-#handOrig = {'e':1, 'v':2, 'n':1, 'i':1, 'l':2}
-#handNew = update_hand(handOrig, 'Evil')
-#hand = deal_hand(7)
-##hand = substitute_hand({'h':1, 'e':1, 'l':2, 'o':1}, 'p')
-##print(hand)
-##print(display_hand(hand))
-#play_hand(hand, word_list)
+if __name__ == '__main__':
+    word_list = load_words()
+    play_game(word_list)
 
